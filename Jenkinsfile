@@ -29,7 +29,7 @@ String copyGlobalLibraryScript(String srcPath, String destPath = null) {
   return destPath
 }
 
-
+sh(copyGlobalLibraryScript('test.sh'))
 // Entry point into microservice-pipelines
 jenkinsJob.call()
 
